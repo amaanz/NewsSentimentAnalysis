@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>News Score</title>
+    {% load static %}
+    <link rel="shortcut icon" href="{% static 'av.png' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+  <header>
+<div class="container">
+  <div class="logo-text">
+    <a href="{% url 'home' %}">
+      <img src="{% static 'av.png' %}" alt="AHV Logo" width="100">
+  </a>
+    <h1>News Score</h1>
+  </div>
+  <div class="topic-select">
+    <input type="text" id="topic" oninput="loadArticles(this.value)" placeholder="Enter a topic...">
+  </div>
+  <div class="nav" id="nav">
+    {% if user.is_authenticated %}
+        <p>Hello, {{ user.username }}   </p>
+        <a href="{% url 'logout' %}" class="log-out">Log Out</a>
+      {% else %}
+        <a href="{% url 'login' %}" class="log-in">Log In</a>
+        <a href="{% url 'signup' %}" class="sign-up">Sign Up</a>
+      {% endif %}
+  </div>
+</div>
+</header>
+
+{% if user.is_authenticated %}
+<div class="title">Headlines Today...</div>
+  {% else %}
+<div class="title">You must Sign Up or Log In to let the website access your API key.</div>
+<div class="center-image">
+  <img src="{% static 'disconnect.png' %}" width="300">
+</div>
+  {% endif %}
+<div class="news-cards" id="news-cards">
+  <!-- News cards will be dynamically inserted here -->
+</div>
+<div class="arrow prev" onclick="prevArticle()">&#10094;</div>
+<div class="arrow next" onclick="nextArticle()">&#10095;</div>
+<script src="{% static 'scripts.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Log In</title>
+    {% load static %}
+    <link rel="shortcut icon" href="{% static 'av.png' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'style_signup.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container1">
+            <div class="logo-text">
+                <a href="{% url 'home' %}">
+                    <img src="{% static 'av.png' %}" alt="AHV Logo" width="100">
+                </a>
+                <h1>News Score</h1>
+            </div>
+        </div>
+    </header>
+    <div class="container2">
+        <h2>Login to Your Account</h2>
+        <form method="post">
+            {% csrf_token %}
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password1">Password:</label>
+            <input type="password" id="password1" name="pass" required>
+            <label for="">Don't have an account yet?  <a href="{% url 'signup' %}">  Sign Up here.</a></label>
+
+            {% if error %}
+                <p class="error">{{ error }}</p>
+            {% endif %}
+
+            <input type="submit" value="Log In">
+        </form>
+    </div>
+    <script src="{% static 'scripts.js' %}"></script> <!-- Include JavaScript file -->
+</body>
+</html>
