@@ -72,7 +72,7 @@ def get_articles(request):
     return Response(serializer.data)
 
 def home(request):
-    return render(request, 'start.html')
+    return render(request, 'index.html')
 # Create your views here.
 
 def news(request):
