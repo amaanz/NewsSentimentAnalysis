@@ -1,8 +1,8 @@
 # How to access local host:
 ```bash
 # Clone the repository
-git clone https://github.com/username/repo-name.git
-cd repo-name
+git clone https://github.com/amaanz/NewsSentimentAnalysis.git
+cd NewsSentimentAnalysis
 
 # Set up django
 pip install django
