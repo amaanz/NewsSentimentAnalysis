@@ -10,7 +10,6 @@ pip install djangorestframework
 
 #Navigate to the directory containing news_sentiment, newsscore,manage.py,etc.
 
-
 # Set up the database
 python manage.py makemigrations
 python manage.py migrate
