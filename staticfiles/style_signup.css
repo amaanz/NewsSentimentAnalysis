@@ -1,0 +1,133 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: 
+        linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)),
+        url('https://images.pexels.com/photos/177557/pexels-photo-177557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    font-weight: bold;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 900;
+    padding: 20px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0)); /* semi-transparent white background */
+}
+
+.container1 {
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 28px;
+
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    color: #fff; /* Adjust text color as needed */
+    gap: 20px;
+}
+
+.container {
+    background-color: #fff; /* Semi-transparent white background */
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 100%;
+    margin-top: 420px;
+    margin-left: 50px; /* Adjust this value to position the form further to the left or right */
+}
+.container2 {
+    background-color: #fff; /* Semi-transparent white background */
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 50px; /* Adjust this value to position the form further to the left or right */
+}
+
+h2 {
+    color: #13072E;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    color: #13072E;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    color: #13072E;
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    color: #13072E;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 17px;
+    background-color: #13072E;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    color: #13072E;
+    background-color: #a7a6a6;
+}
+
+.password-input {
+    position: relative;
+}
+
+.password-input input[type="password"] {
+    padding-right: 30px; /* Adjust this value to leave space for the eye icon */
+}
+
+.profile {
+    color: #4CAF50;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.profile:hover {
+    color: #45a049;
+}
+
+.profile:active {
+    transform: scale(0.95);
+}
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+.error2 {
+    color: red;
+    margin-bottom: 10px;
+}
