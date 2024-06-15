@@ -1,4 +1,4 @@
-#How to access local host:
+# How to access local host:
 ```bash
 # Clone the repository
 git clone https://github.com/username/repo-name.git
@@ -22,4 +22,4 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-#Use the local host link generated to access the site.
+# Use the local host link generated to access the site.
