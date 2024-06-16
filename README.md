@@ -20,8 +20,7 @@ python manage.py createsuperuser
 # Run the development server
 python manage.py runserver
 ```
-
-# Use the local host link generated to access the site.
+Use the local host link generated to access the site.
 
 # How to check out the news?
 
