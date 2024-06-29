@@ -26,3 +26,8 @@ Use the local host link generated to access the site.
 
 You are advised to go through the whole sign up login process and also sign up at newsapi.org to generate your api key.
 Enter that during the site sign up proccess, once you have don that, you are all set to use the NEWS SCORE site.
+
+# Screenshots
+![homepg](homepg.png)
+![newspg](newspg.png)
+
